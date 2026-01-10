@@ -11,6 +11,9 @@ importers:
       '@koa/bodyparser':
         specifier: ^6.0.0
         version: 6.0.0(koa@3.1.1)
+      '@koa/cors':
+        specifier: ^5.0.0
+        version: 5.0.0
       '@koa/router':
         specifier: ^15.2.0
         version: 15.2.0(koa@3.1.1)
@@ -36,6 +39,9 @@ importers:
       '@types/koa-static':
         specifier: ^4.0.4
         version: 4.0.4
+      '@types/koa__cors':
+        specifier: ^5.0.1
+        version: 5.0.1
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
@@ -260,6 +266,10 @@ packages:
     peerDependencies:
       koa: '>=2'
 
+  '@koa/cors@5.0.0':
+    resolution: {integrity: sha512-x/iUDjcS90W69PryLDIMgFyV21YLTnG9zOpPXS7Bkt2b8AsY3zZsIpOLBkYr9fBcF3HbkKaER5hOBZLfpLgYNw==}
+    engines: {node: '>= 14.0.0'}
+
   '@koa/router@15.2.0':
     resolution: {integrity: sha512-7YUhq4W83cybfNa4E7JqJpWzoCTSvbnFltkvRaUaUX1ybFzlUoLNY1SqT8XmIAO6nGbFrev+FvJHw4mL+4WhuQ==}
     engines: {node: '>= 20'}
@@ -310,6 +320,9 @@ packages:
 
   '@types/koa@3.0.1':
     resolution: {integrity: sha512-VkB6WJUQSe0zBpR+Q7/YIUESGp5wPHcaXr0xueU5W0EOUWtlSbblsl+Kl31lyRQ63nIILh0e/7gXjQ09JXJIHw==}
+
+  '@types/koa__cors@5.0.1':
+    resolution: {integrity: sha512-xZckuh3B6ycSBAIYnBImG1VDHyBNZsltGAuGb4THuZllccdLgD5DUs4RA7TAUjB58THg00SSZ1e//duQef7WRw==}
 
   '@types/node@25.0.3':
     resolution: {integrity: sha512-W609buLVRVmeW693xKfzHeIV6nJGGz98uCPfeXI1ELMLXVeKYZ9m15fAMSaUPBHYLGFsVRcMmSCksQOrZV9BYA==}
@@ -782,6 +795,10 @@ snapshots:
       lodash.merge: 4.6.2
       type-is: 2.0.1
 
+  '@koa/cors@5.0.0':
+    dependencies:
+      vary: 1.1.2
+
   '@koa/router@15.2.0(koa@3.1.1)':
     dependencies:
       debug: 4.4.3
@@ -861,6 +878,10 @@ snapshots:
       '@types/keygrip': 1.0.6
       '@types/koa-compose': 3.2.9
       '@types/node': 25.0.3
+
+  '@types/koa__cors@5.0.1':
+    dependencies:
+      '@types/koa': 3.0.1
 
   '@types/node@25.0.3':
     dependencies:

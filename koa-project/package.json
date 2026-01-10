@@ -13,16 +13,18 @@
   "packageManager": "pnpm@10.27.0",
   "dependencies": {
     "@koa/bodyparser": "^6.0.0",
+    "@koa/cors": "^5.0.0",
     "@koa/router": "^15.2.0",
+    "address": "^2.0.3",
     "chalk": "^5.6.2",
     "koa": "^3.1.1",
-    "koa-static": "^5.0.0",
-    "address": "^2.0.3"
+    "koa-static": "^5.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.11",
     "@types/koa": "^3.0.1",
     "@types/koa-static": "^4.0.4",
+    "@types/koa__cors": "^5.0.1",
     "tsx": "^4.21.0"
   }
 }
