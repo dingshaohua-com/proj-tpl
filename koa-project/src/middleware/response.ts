@@ -6,7 +6,7 @@ export interface JsonResult<T = unknown> {
 	msg: string; // 提示信息
 }
 
-// 业务异常（自定义异常/错误，在使用的地方直接 new BizError('XXXX')）
+// 业务异常（自定义异常/错误，在使用的地方直接 throw new BizError('XXXX')）
 export class BizError extends Error {
 	readonly code: number;
 	readonly status: number;
