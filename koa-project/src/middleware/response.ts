@@ -6,12 +6,12 @@ export interface JsonResult<T = unknown> {
 	msg: string; // 提示信息
 }
 
-// 业务异常（自定义异常/错误）
-class BizError extends Error {
+// 业务异常（自定义异常/错误，在使用的地方直接 new BizError('XXXX')）
+export class BizError extends Error {
 	readonly code: number;
 	readonly status: number;
 
-	constructor(code: number, message: string, status = 200) {
+	constructor(message: string, code: number=1, status = 200) {
 		super(message);
 		this.code = code;
 		this.status = status;
