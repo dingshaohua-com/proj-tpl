@@ -26,7 +26,7 @@ export default async function response(
 		await next();
 
 		// 404 兜底
-		if (ctx.status === 404 && ctx.matched.length === 0) {
+		if (ctx.status === 404 || ctx.matched.length === 0) {
 			ctx.body = { code: 404, data: null, msg: '请求的接口不存在' };
 			return;
 		}
