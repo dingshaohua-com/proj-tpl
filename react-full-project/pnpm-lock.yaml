@@ -24,6 +24,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.3.12
         version: 2.3.12
+      '@repo/config-ts':
+        specifier: workspace:*
+        version: link:../../packages/config-ts
       '@types/node':
         specifier: ^25.0.10
         version: 25.0.10
@@ -52,6 +55,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.3.12
         version: 2.3.12
+      '@repo/config-ts':
+        specifier: workspace:*
+        version: link:../../packages/config-ts
       '@rsbuild/core':
         specifier: ^1.7.2
         version: 1.7.2
@@ -75,6 +81,8 @@ importers:
         version: 5.9.3
 
   packages/config-biome: {}
+
+  packages/config-ts: {}
 
 packages:
 

@@ -1,9 +1,9 @@
 import "./App.css";
 
 const App = () => {
-  var a ="123"
+  var a = "123";
   console.log(a);
-  
+
   return (
     <div className="content">
       <h1>Rsbuild with React</h1>
