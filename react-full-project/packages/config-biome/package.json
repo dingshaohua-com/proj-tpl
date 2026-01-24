@@ -1,0 +1,7 @@
+{
+  "name": "@repo/config-biome",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0"
+}
