@@ -1,16 +1,12 @@
 [
   {
-    "text": "Guide",
+    "text": "项目手册",
     "link": "/guide/",
     "activeMatch": "/guide/"
   },
   {
-    "text": "Hello world",
+    "text": "Repress",
     "link": "/hello/",
     "activeMatch": "/hello/"
-  },
-  {
-    "text": "API",
-    "link": "https://rspress.rs/api/index.html"
   }
 ]
