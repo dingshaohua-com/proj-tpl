@@ -1,5 +1,5 @@
 {
-   "name": "@repo/config-tailwind",
+  "name": "@repo/config-tailwind",
   "version": "0.0.0",
   "description": "tailwindcss 配置",
   "license": "ISC",

@@ -3,17 +3,15 @@
  * @param obj 需要处理的对象
  * @returns 去除空字段后的新对象
  */
-export function removeEmptyFields<T extends Record<string, any>>(
-  obj: T | null | undefined
-): Partial<T> {
+export function removeEmptyFields<T extends Record<string, any>>(obj: T | null | undefined): Partial<T> {
   if (!obj) {
     return {};
   }
 
   const result: Partial<T> = {};
-  
+
   Object.entries(obj).forEach(([key, value]) => {
-    if (value !== "" && value !== undefined && value !== null) {
+    if (value !== '' && value !== undefined && value !== null) {
       result[key as keyof T] = value;
     }
   });

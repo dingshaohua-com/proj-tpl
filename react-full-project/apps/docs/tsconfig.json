@@ -1,6 +1,6 @@
 {
- "extends": "@repo/config-ts/rs-app.json",
- "include": ["docs", "theme", "rspress.config.ts"],
+  "extends": "@repo/config-ts/rs-app.json",
+  "include": ["docs", "theme", "rspress.config.ts"],
   "mdx": {
     "checkMdx": true
   }

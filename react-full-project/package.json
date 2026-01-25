@@ -5,10 +5,11 @@
   "scripts": {
     "build": "turbo run build",
     "dev:main": "turbo run dev --filter=@repo/main",
-    "dev:docs": "turbo run dev --filter=@repo/docs"
+    "dev:docs": "turbo run dev --filter=@repo/docs",
+    "format": "biome format --write ."
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.12",
-    "turbo": "^2.7.5"
+    "turbo": "^2.7.6"
   }
 }
