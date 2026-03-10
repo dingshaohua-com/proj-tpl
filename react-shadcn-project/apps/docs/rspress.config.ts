@@ -15,7 +15,7 @@ export default defineConfig({
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/dingshaohua-com/proj-tpl/blob/main/react-full-project',
+        content: 'https://github.com/dingshaohua-com/proj-tpl/blob/main/react-shadcn-project',
       },
     ],
   },
