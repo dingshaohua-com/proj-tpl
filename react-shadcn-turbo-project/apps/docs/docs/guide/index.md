@@ -5,7 +5,7 @@
 咱并没用[官方提到](https://turborepo.dev/docs/getting-started/installation)的`pnpm dlx create-turbo`来初始化项目，因为和咱们的rsbuild架构不符，不但复杂且带有太多干扰。
 :::
 
-使用`pnpm init`初始化空项目react-antd-project即可
+使用`pnpm init`初始化空项目react-shadcn-turbo-project即可
 
 ## Monorepo
 
@@ -33,7 +33,7 @@ pnpm add --D turbo
 此时我们根项目应是这个
 ```json title=package.json
 {
- "name": "react-antd-project",
+ "name": "react-shadcn-turbo-project",
  "version": "0.0.1",
  "packageManager": "pnpm@10.27.0",
  "scripts": {

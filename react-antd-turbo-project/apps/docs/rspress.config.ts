@@ -15,7 +15,7 @@ export default defineConfig({
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/dingshaohua-com/proj-tpl/blob/main/react-antd-project',
+        content: 'https://github.com/dingshaohua-com/proj-tpl/blob/main/react-antd-turbo-project',
       },
     ],
   },

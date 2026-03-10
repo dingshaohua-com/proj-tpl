@@ -6,11 +6,15 @@
 # Dist
 node_modules
 dist/
+doc_build/
 
 # Profile
 .rspack-profile-*/
 
 # IDE
-.vscode/*
-!.vscode/extensions.json
+# .vscode/*
+# !.vscode/extensions.json
 .idea
+
+# frame
+.turbo
