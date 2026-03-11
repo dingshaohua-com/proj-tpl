@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Button, Table, Modal, Descriptions } from 'antd';
-import { Link } from 'react-router';
 import * as userApi from '@/api/endpoints/user';
 import type { UserResponse } from '@/api/model';
 
@@ -43,10 +42,7 @@ export default function UserPage() {
 
   return (
     <div className="p-6">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-semibold">用户管理</h2>
-        <Link to="/"><Button>返回首页</Button></Link>
-      </div>
+      <h2 className="text-xl font-semibold mb-4">用户管理</h2>
 
       <Table
         rowKey="id"
