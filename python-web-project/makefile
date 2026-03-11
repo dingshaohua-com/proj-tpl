@@ -15,17 +15,13 @@ UNAME_S := $(shell uname -s 2>/dev/null || echo "Windows")
 # 并行启动前后端（-j 2 表示同时运行两个任务）
 dev:
 	@echo "🚀 启动开发环境..."
-	@make -j 1 backend
-# @make -j 2 frontend backend
+	@make -j 2 frontend backend
 
 # 前端开发服务器（Vite）
-# frontend:
-# 	cd web && npm run dev
+frontend:
+	cd web && npm run dev
 
 # 后端开发服务器（FastAPI）
 backend:
-	cd server && source venv/bin/activate && python -m uvicorn server.app:server --reload --host 0.0.0.0
-
-# source venv/bin/activate && python -m uvicorn server.app:server --reload --host 0.0.0.0
-
+	cd server && source .venv/bin/activate && python -m uvicorn server.app:server --reload --host 0.0.0.0
 

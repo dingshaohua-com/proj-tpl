@@ -7,10 +7,12 @@
     "check": "biome check --write",
     "dev": "rsbuild dev --open",
     "format": "biome format --write",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "api:gen": "orval"
   },
   "dependencies": {
     "antd": "^6.3.2",
+    "axios": "^1.13.6",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "^7.13.1"
@@ -24,6 +26,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "^1.0.0",
+    "orval": "^8.5.3",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
   }
