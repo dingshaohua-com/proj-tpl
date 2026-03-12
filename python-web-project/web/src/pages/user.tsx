@@ -18,8 +18,6 @@ export default function UserPage() {
 
   const fetchDetail = async (id: number) => {
     const data = await userApi.getByIdApiUserUserIdGet(id);
-    console.log(89898989, data);
-
     setDetail(data);
     setOpen(true);
   };
