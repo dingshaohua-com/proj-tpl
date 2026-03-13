@@ -13,8 +13,14 @@ axios.interceptors.response.use(
     }
   },
   (error) => {
+        // 后端响应（4xx/5xx）时，将错误信息放在 error.response.data
+    if (error.response) {
+      message.error(error.response.data.msg)
+    } else {
+      message.error(error.message)
+    }
     return Promise.reject(error);
-  },
+  }
 );
 
 
